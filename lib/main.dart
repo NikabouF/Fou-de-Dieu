@@ -1,37 +1,26 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
-import 'package:foudedieu/views/ui/home_page.dart';
+import 'package:foudedieu/views/ui/login_screen.dart';
+import 'package:foudedieu/views/ui/sign_up_screen.dart';
+import 'package:foudedieu/views/ui/splash_screen.dart';
 
 void main() {
-  runApp(MaterialApp(
-    home: MyApp(),
-  ));
+  runApp(MyApp());
 }
 
-class MyApp extends StatefulWidget {
-  @override
-  _MyAppState createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  @override
-  void initState() {
-    super.initState();
-    Future.delayed(Duration(seconds: 3), () {
-      Navigator.push(
-          context, MaterialPageRoute(builder: (context) => HomePage()));
-    });
-  }
-
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: FlutterLogo(
-          size: 400,
-        ),
+    return MaterialApp(
+      title: 'Fou de Dieu',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.yellow,
       ),
+      home: SplashScreen(),
+      routes: {
+        LoginScreen.routeName: (context) => LoginScreen(),
+        SignUpScreen.routeName: (context) => SignUpScreen(),
+      },
     );
   }
 }

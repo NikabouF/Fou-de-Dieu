@@ -32,7 +32,7 @@ class _GetStartedScreenState extends State<GetStartedScreen> {
   void initState() {
     super.initState();
     Timer.periodic(Duration(seconds: 5), (Timer timer) {
-      if (_currentPage < 2) {
+      if (_currentPage < 5) {
         _currentPage++;
       } else {
         _currentPage = 0;
@@ -95,10 +95,8 @@ class _GetStartedScreenState extends State<GetStartedScreen> {
                   color: Colors.amber,
                   textColor: Colors.white,
                   onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (BuildContext context) => LoginScreen()));
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(
+                        builder: (BuildContext context) => LoginScreen()));
                   },
                 ),
                 SizedBox(

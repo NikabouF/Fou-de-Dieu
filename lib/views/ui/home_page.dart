@@ -14,14 +14,17 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.yellow,
         title: Text(
           'Fou de Dieu',
-          style: TextStyle(color: Colors.black),
+          style: TextStyle(color: Colors.white),
         ),
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios),
-          onPressed: () {
-            Navigator.of(context).pop();
-          },
-        ),
+//        leading: IconButton(
+//          icon: Icon(
+//            Icons.arrow_back_ios,
+//            color: Colors.white,
+//          ),
+//          onPressed: () {
+//            Navigator.of(context).pop();
+//          },
+//        ),
       ),
       body: Container(
         color: Colors.white,
@@ -48,17 +51,17 @@ class _HomePageState extends State<HomePage> {
           Icon(
             Icons.home,
             size: 20,
-            color: Colors.black,
+            color: Colors.amber,
           ),
           Icon(
             Icons.add,
             size: 20,
-            color: Colors.black,
+            color: Colors.amber,
           ),
           Icon(
             Icons.list,
             size: 20,
-            color: Colors.black,
+            color: Colors.amber,
           ),
         ],
         animationDuration: Duration(

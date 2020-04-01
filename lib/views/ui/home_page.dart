@@ -45,23 +45,23 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: CurvedNavigationBar(
         color: Colors.yellow,
         backgroundColor: Colors.white,
-        buttonBackgroundColor: Colors.yellow,
+        buttonBackgroundColor: Colors.white,
         height: 50,
         items: <Widget>[
           Icon(
             Icons.home,
             size: 20,
-            color: Colors.amber,
+            color: Colors.white,
           ),
           Icon(
             Icons.add,
             size: 20,
-            color: Colors.amber,
+            color: Colors.white,
           ),
           Icon(
             Icons.list,
             size: 20,
-            color: Colors.amber,
+            color: Colors.white,
           ),
         ],
         animationDuration: Duration(

@@ -220,7 +220,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: Text(
                       'Se connecter',
                       style: TextStyle(
-                        fontSize: 25,
+                        fontSize: 20,
                         color: Colors.white,
                       ),
                     ),

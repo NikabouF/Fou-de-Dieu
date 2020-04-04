@@ -39,7 +39,7 @@ class _GetStartedScreenState extends State<GetStartedScreen> {
       }
 
       _pageController.animateToPage(_currentPage,
-          duration: Duration(milliseconds: 500), curve: Curves.easeIn);
+          duration: Duration(milliseconds: 600), curve: Curves.easeIn);
     });
   }
 
